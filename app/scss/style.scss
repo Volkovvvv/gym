@@ -1,0 +1,274 @@
+$gold:#C6BD73;
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+a{
+    text-decoration:none;
+}
+// .wrapper{
+//     height: 100vh;
+// }
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url('../images/background/Фон\ 1\ блока\ \(4\).jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+.header__inner{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    .logo{
+        div{
+            font-size:18px;
+            font-weight:800;
+            letter-spacing:4px;
+            margin-bottom: 3px;
+            color:$gold;
+            cursor: pointer;
+        }
+        span{
+            font-weight: 400;
+            font-size:12px;
+            color:#fff;  cursor: pointer;
+        }
+    }
+    &-location{
+        margin-left: -330px;
+        display:flex;
+        align-items: center;
+        img{
+            margin-right: 12px;
+        }
+        div,span{
+            font-size:14px;
+            font-weight:400;
+            color:#fff;
+        }
+    }
+    &-call{
+        cursor:pointer;
+        position: relative;
+        .header__inner-tel{
+            position:absolute;
+            left: 28px;
+            top: 14px;
+        }
+        span{
+            position: absolute;
+            font-size:14px;
+            color:#C6BD73;
+            font-weight: 700;
+            top: 20px;
+            left: 79px;
+        }
+        .header__inner-schedule{
+            position:absolute;
+            color:#fff;
+            font-weight: 300;
+            font-size:12px;
+            left: 36px;
+            top: 65px;
+        }
+    }
+}
+.header__offer{
+    margin-top: 84px;
+    font-size:34px;
+    color:#fff;
+    &-text{
+    min-width: 418px;
+    }
+    &-inner{
+        display:flex;
+    }
+    &-descr{
+        font-size:18px;
+        font-weight:300px;
+        width: 262px;
+        line-height:130%;
+        margin-top: 117px;
+        margin-left: 76px;
+    }
+    .header__offer-line{
+        position: relative;
+        top: 191px;
+        left: -320px;
+    }
+    div+div{
+        margin-top: 10px;
+    }
+    &-premium{
+        color:$gold;
+        font-weight:800;
+    }
+    &-btn{
+        position:relative;
+        font-size:18px;
+        font-weight:600;
+        padding:25px;
+        background: linear-gradient(169.05deg, #C6BD73 -130.64%, #FFFFFF 1.74%, rgba(255, 184, 0, 0.58) 103.18%);
+        box-shadow: 0px 4px 30px rgba(255, 184, 0, 0.49);
+        border-radius: 44px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.24));
+        border:none;
+        outline:none;
+        cursor: pointer;
+        margin-top: 78px;
+    }
+    &-man{
+       img{
+            margin-top: -172px;
+            margin-left: -88px
+       }
+    }
+    .header__offer-line{
+        position:relative;
+    }
+    &-stat{
+        .header__offer-sqr{
+            .header__offer-metres{
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 88px;
+                background: linear-gradient(101.99deg, #C6BD73 -12.38%, #FFB800 133.48%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: -235px;
+            }
+            .header__offer-square{
+                font-size:48px;
+                font-weight:900;
+                display:block;
+                margin-top: -111px;
+                background: linear-gradient(151.46deg, #C6BD73 -70.51%, #FFB800 125.92%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .header__offer-common{
+                font-size:14px;
+                font-weight:600;
+                margin-top: 52px;
+                margin-left: -188px;
+            }
+        }
+        .header__offer-people{
+            .header__offer-howmuch{
+                font-size:48px;
+                font-weight:600;
+                margin-left: -163px;
+                margin-top: 18px;
+                background: linear-gradient(185.54deg, #C6BD73 -102.13%, #FFB800 110.31%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }      
+            .header__offer-club{
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: -127px;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+//end first block
+
+//start second block
+.services{
+    background-image: url('../images/background/back 2 block (2).jpg');
+    width:100%;
+    height: 100%;
+    background-position: center;
+    padding-top: 73px;
+}
+.services-inner{
+    color:#fff;
+    display:flex;
+    align-items: center;
+    margin-bottom: 95px;
+    &__title{
+        margin-right: 60px;
+        font-weight:300;
+        line-height:41px;
+        max-width:445px;
+        width: 100%;
+        font-size:30px;
+        .gold-text{
+            font-weight:600;
+            color:$gold;
+        }
+    }
+    &__info{
+        font-size:14px;
+        font-weight:300;
+        max-width:261px;
+        width:100%;
+        line-height:26px;
+    }
+}
+.services-slider__item{
+    background-color:#fff;
+    max-width:225px;
+    width:100%;
+    height: 260px;
+    border-radius:27px;
+    box-shadow: 0px -3px 30px #000000;
+    padding-top: 15px;
+    
+    img{
+        margin:0 auto;
+    }
+    div{
+        font-size:18px;
+        line-height: 30px;
+        font-weight:400;
+        text-align:center;
+        margin-top: 27px;
+    }
+}
+.slick-prev.slick-arrow{
+    position: absolute;
+    left: -121px;
+    top: 106px;  
+    border:none;
+    outline:none;
+    background-color:rgba(212, 184, 107, 1);
+    border-radius:50%;
+    width: 44px;
+    height: 40px;
+    cursor:pointer;
+    
+}
+.slick-next.slick-arrow{
+    position: absolute;
+    right: -45px;
+    top: 106px;
+    border:none;
+    outline:none;
+    background-color:rgba(212, 184, 107, 1);
+    border-radius:50%;
+    width: 44px;
+    height: 40px;
+    cursor:pointer;
+}
+
+   
+  
